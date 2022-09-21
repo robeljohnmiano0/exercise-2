@@ -1,0 +1,24 @@
+using System;
+namespace ComputeAverageApp
+{
+  public class miano
+    {
+        public static void Main(string[] args)
+        {
+        double average;
+        int grade1, grade2, grade3, grade4, grade5;
+            
+        Console.Write("Enter 5 grades separated by new line: ");
+        grade1 = Convert.ToInt16(Console.ReadLine());
+        grade2 = Convert.ToInt16(Console.ReadLine());
+        grade3 = Convert.ToInt16(Console.ReadLine());
+        grade4 = Convert.ToInt16(Console.ReadLine());
+        grade5 = Convert.ToInt16(Console.ReadLine());
+        average = ((double)grade1 + (double)grade2 + (double)grade3 + (double)grade4 + (double)grade5) / 5;
+        Console.WriteLine("The average is " + average + " and round off to " + Math.Round(average));;
+        
+        Console.Write("\nPress any key to exit... ");
+        Console.ReadKey();
+        }
+    }  
+}
